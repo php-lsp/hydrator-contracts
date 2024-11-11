@@ -3,10 +3,10 @@
     "description": "Hydrator Contracts",
     "type": "library",
     "license": "MIT",
-    "keywords": ["contracts", "hydrator", "mapping", "serialization", "jms", "valinor", "interfaces"],
+    "keywords": ["hydrator", "mapper", "serializer", "interoperability", "php", "lsp"],
     "support": {
         "source": "https://github.com/php-lsp/hydrator-contracts",
-        "issues": "https://github.com/php-lsp/hydrator-contracts/issues"
+        "issues": "https://github.com/php-lsp/php-lsp/issues"
     },
     "authors": [
         {

@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Lsp\Contracts\Hydrator;
 
 use Lsp\Contracts\Hydrator\Exception\HydratorExceptionInterface;
-use Lsp\Contracts\Hydrator\Exception\MarshallingExceptionInterface;
 
 /**
  * The implementation of this interface provides the ability to transform
@@ -31,10 +30,10 @@ interface ExtractorInterface
      * // ]
      * ```
      *
-     * @throws HydratorExceptionInterface The general exception that occurs
-     *         in case of hydrator errors.
-     * @throws MarshallingExceptionInterface An exception that occurs in case
-     *         of errors during extraction process.
+     * @param non-empty-string|null $type
+     *
+     * @throws HydratorExceptionInterface the general exception that occurs
+     *         in case of hydrator errors
      */
-    public function extract(mixed $data): mixed;
+    public function extract(mixed $data, ?string $type = null): mixed;
 }
